@@ -1,0 +1,15 @@
+/home/oladapo/Desktop/design-patterns/patterns/bin/Debug/net7.0/patterns
+/home/oladapo/Desktop/design-patterns/patterns/bin/Debug/net7.0/patterns.deps.json
+/home/oladapo/Desktop/design-patterns/patterns/bin/Debug/net7.0/patterns.runtimeconfig.json
+/home/oladapo/Desktop/design-patterns/patterns/bin/Debug/net7.0/patterns.dll
+/home/oladapo/Desktop/design-patterns/patterns/bin/Debug/net7.0/patterns.pdb
+/home/oladapo/Desktop/design-patterns/patterns/obj/Debug/net7.0/patterns.csproj.AssemblyReference.cache
+/home/oladapo/Desktop/design-patterns/patterns/obj/Debug/net7.0/patterns.GeneratedMSBuildEditorConfig.editorconfig
+/home/oladapo/Desktop/design-patterns/patterns/obj/Debug/net7.0/patterns.AssemblyInfoInputs.cache
+/home/oladapo/Desktop/design-patterns/patterns/obj/Debug/net7.0/patterns.AssemblyInfo.cs
+/home/oladapo/Desktop/design-patterns/patterns/obj/Debug/net7.0/patterns.csproj.CoreCompileInputs.cache
+/home/oladapo/Desktop/design-patterns/patterns/obj/Debug/net7.0/patterns.dll
+/home/oladapo/Desktop/design-patterns/patterns/obj/Debug/net7.0/refint/patterns.dll
+/home/oladapo/Desktop/design-patterns/patterns/obj/Debug/net7.0/patterns.pdb
+/home/oladapo/Desktop/design-patterns/patterns/obj/Debug/net7.0/patterns.genruntimeconfig.cache
+/home/oladapo/Desktop/design-patterns/patterns/obj/Debug/net7.0/ref/patterns.dll
