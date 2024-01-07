@@ -86,10 +86,15 @@ public class MullardDuck : Duck
 {
     public MullardDuck()
     {
-        quackBehavior = new Quack();
-        flyBehavior = new FlyWithWings();
+        // the instance behavior set in the Duck class
+        this.quackBehavior = new Quack();
+        this.flyBehavior = new FlyWithWings();
 
 
+    }
+    public void ChangeQuackBehavior(IQuackBehavior quackBehavior)
+    {
+        this.quackBehavior = quackBehavior;
     }
     override public void display()
     {
