@@ -11,5 +11,13 @@ WeatherData weatherData = new WeatherData();
 
 CurrentConditionDisplay currentConditionDisplay = new CurrentConditionDisplay(weatherData);
 
-weatherData.SetMeasurements(20, 39, 90);
+// weatherData.SetMeasurements(20, 39, 90);
+PublishingCompany publishingCompany = new PublishingCompany();
 
+PunchNewsPaper punchNewsPaper = new PunchNewsPaper(publishingCompany);
+SunNewsPaper sunNewsPaper = new SunNewsPaper(publishingCompany);
+
+for (int i = 0; i < 10; i++)
+{
+    publishingCompany.UpdateData("kolawole is the top guy", i);
+}

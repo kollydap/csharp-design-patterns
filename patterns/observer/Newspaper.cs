@@ -49,12 +49,52 @@ public class PublishingCompany : INewsSubject
 
 }
 
-class PunchNewsPaper : INewsObserver
+class PunchNewsPaper : INewsObserver, IDisplayElement
 {
-
+    public PunchNewsPaper(INewsSubject newsSubject)
+    {
+        this.newsSubject = newsSubject;
+        newsSubject.RegisterObserver(this);
+    }
+    INewsSubject newsSubject;
+    string paperName;
+    int id;
     public void Update(string paperName, int id)
     {
 
+        this.paperName = paperName;
+        this.id = id;
+        this.Display();
+
+    }
+    public void Display()
+    {
+        Console.WriteLine("Wassup this is puncccchhhhhhh..... " + this.paperName + " " + this.id);
+    }
+
+}
+
+class SunNewsPaper : INewsObserver, IDisplayElement
+{
+    public SunNewsPaper(INewsSubject newsSubject)
+    {
+        this.newsSubject = newsSubject;
+        newsSubject.RegisterObserver(this);
+    }
+    INewsSubject newsSubject;
+    string paperName;
+    int id;
+    public void Update(string paperName, int id)
+    {
+
+        this.paperName = paperName;
+        this.id = id;
+        this.Display();
+
+    }
+    public void Display()
+    {
+        Console.WriteLine("Wassup this is Sun..... " + this.paperName + " " + this.id);
     }
 
 }
