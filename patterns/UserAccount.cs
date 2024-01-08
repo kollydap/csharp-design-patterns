@@ -39,7 +39,8 @@ public class StripePayment : Ipaymentmethod
 public class ZellePayment : Ipaymentmethod
 {
     public void MakePayment(int amount, int cardNumber)
-    {
+    {   
+        // we could use rabbit mq here
         Console.WriteLine("Paying with Zelle...");
         if (amount < 1 || cardNumber.ToString().Length != 4)
         {
