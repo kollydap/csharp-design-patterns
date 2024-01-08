@@ -9,30 +9,46 @@ public abstract class UserAccount
     public string name { get; set; }
     public int age { get; set; }
     public Ipaymentmethod paymentmethod;
-    public void MAkePAYMENT()
+    public void MAkePAYMENT(int amount, int cardNumber)
     {
-        this.paymentmethod.MakePayment();
+        this.paymentmethod.MakePayment(amount, cardNumber);
     }
 }
 
 public interface Ipaymentmethod
 {
-    public void MakePayment();
+    public void MakePayment(int amount, int cardNumber);
 }
 
 public class StripePayment : Ipaymentmethod
 {
-    public void MakePayment()
+    public void MakePayment(int amount, int cardNumber)
     {
-        Console.WriteLine("PAying with Stripe");
+        Console.WriteLine("Paying with Stripe...");
+        if (amount < 1 || cardNumber.ToString().Length != 4)
+        {
+            return;
+        }
+        Thread.Sleep(10000);
+        // Perdform other algorithms 
+        Console.WriteLine("Successful");
+
     }
 }
 
 public class ZellePayment : Ipaymentmethod
 {
-    public void MakePayment()
+    public void MakePayment(int amount, int cardNumber)
     {
-        Console.WriteLine("PAying with Zelle");
+        Console.WriteLine("Paying with Zelle...");
+        if (amount < 1 || cardNumber.ToString().Length != 4)
+        {
+            return;
+        }
+        Thread.Sleep(10000);
+        // Perdform other algorithms 
+        Console.WriteLine("Successful");
+
     }
 }
 

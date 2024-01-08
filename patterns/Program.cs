@@ -4,4 +4,4 @@
 // mallard.PerformQuack();
 UserAccount user = new FreeUserAccount("kola", 22);
 // Console.WriteLine(user.MAkePAYMENT());
-user.MAkePAYMENT();
+user.MAkePAYMENT(2000, 7000);
