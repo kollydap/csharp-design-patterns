@@ -23,8 +23,12 @@
 // }
 
 
-Users users = new Student("Osagie", 1, 200);
-users.SortUser();
-Users teachers = new Teacher("Osagie", 1, 200);
-teachers.SortUser();
+// Users users = new Student("Osagie", 1, 200);
+// users.SortUser();
+// Users teachers = new Teacher("Osagie", 1, 200);
+// teachers.SortUser();
 // teachers.ChangeSortMethod()
+
+Beverage beverage = new HouseBlend();
+CondimentDecorator contadiment = new Mocha(beverage);
+Console.WriteLine(beverage.GetDescription());
