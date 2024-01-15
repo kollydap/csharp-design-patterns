@@ -30,5 +30,5 @@
 // teachers.ChangeSortMethod()
 
 Beverage beverage = new HouseBlend();
-CondimentDecorator contadiment = new Mocha(beverage);
-Console.WriteLine(beverage.GetDescription());
+beverage = new Mocha(beverage);
+Console.WriteLine(beverage.Cost());
