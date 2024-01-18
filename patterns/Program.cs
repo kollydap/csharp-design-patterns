@@ -32,3 +32,7 @@
 Beverage beverage = new HouseBlend();
 beverage = new Mocha(beverage);
 Console.WriteLine(beverage.Cost());
+
+Vehicle vehicle = new Benz();
+vehicle = new YokohomaTyres(vehicle);
+Console.WriteLine(vehicle.Cost());
