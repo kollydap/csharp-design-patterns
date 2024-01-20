@@ -38,3 +38,4 @@ vehicle = new YokohomaTyres(vehicle);
 Console.WriteLine(vehicle.Cost());
 
 // Singleton singleton = new Singleton();GIT 
+Cache cache = new Cache();
